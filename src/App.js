@@ -1,8 +1,9 @@
 import FormPage from "./pages/FormPage";
+import "./app.scss";
 
 function App() {
   return (
-    <div>
+    <div className="container">
      <FormPage/>
     </div>
   );

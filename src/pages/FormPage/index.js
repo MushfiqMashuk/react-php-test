@@ -40,6 +40,7 @@ function FormPage() {
     <div>
       <FormContext.Provider value={{ handleChange }}>
         <Form>
+          <h3>Form</h3>
           {formFields.map((field, index) => (
             <InputElement key={index} field={field[1]} fieldName={field[0]} />
           ))}
