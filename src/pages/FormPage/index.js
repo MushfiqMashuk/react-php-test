@@ -39,12 +39,12 @@ function FormPage() {
   return (
     <div>
       <FormContext.Provider value={{ handleChange }}>
-        <Form>
+        {formFields.length > 0 && <Form>
           <h3>Form</h3>
           {formFields.map((field, index) => (
             <InputElement key={index} field={field[1]} fieldName={field[0]} />
           ))}
-        </Form>
+        </Form>}
       </FormContext.Provider>
     </div>
   );
